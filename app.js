@@ -10,3 +10,13 @@ function agregarAmigo() {
     alert("Por favor, ingrese un nombre");
   }
 }
+
+function mostrarAmigos() {
+  let amigosList = document.getElementById("listaAmigos");
+  amigosList.innerHTML = "";
+  for (let i = 0; i < amigos.length; i++) {
+    let li = document.createElement("li");
+    li.textContent = amigos[i];
+    amigosList.appendChild(li);
+  }
+}
