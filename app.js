@@ -30,3 +30,10 @@ function sortearAmigo() {
     alert("No se pueden sortear más de 10 amigos.");
     return;
   }
+  const indice = Math.floor(Math.random() * amigos.length);
+  const amigoSorteado = amigos[indice];
+  const resultadoLista = document.getElementById("resultado");
+  const li = document.createElement("li");
+  li.textContent = "Tu amigo secreto es " + amigoSorteado;
+  resultadoLista.appendChild(li);
+}
