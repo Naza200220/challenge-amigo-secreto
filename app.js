@@ -20,3 +20,13 @@ function mostrarAmigos() {
     amigosList.appendChild(li);
   }
 }
+
+function sortearAmigo() {
+  if (amigos.length < 2) {
+    alert("Debe haber al menos dos amigos para sortear.");
+    return;
+  }
+  if (amigos.length > 10) {
+    alert("No se pueden sortear más de 10 amigos.");
+    return;
+  }
